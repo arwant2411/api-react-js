@@ -1,14 +1,13 @@
 import React, {Component} from 'react'
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link,
-    useLocation
-  } from "react-router-dom";
   
 class DetailApi extends Component{
+
+    // componentDidMount(){
+    //     console.log(this.props.match.params.detailID)
+    // }
+
     render() {
+        console.log(this.props)
         return (
             
             <div>

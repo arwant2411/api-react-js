@@ -106,6 +106,11 @@ class GetApi extends Component{
             })
     }
 
+    handleDetail = (id) => {
+        console.log(id)
+        this.props.history.push(`/detail/${id}`)
+    }
+
     render() {
         return (
             <div>
@@ -117,7 +122,7 @@ class GetApi extends Component{
                 <hr />
                 {
                     this.state.post.map(post => {
-                        return <ListData key={post.id} data={post} remove={this.handleRemove} update={this.handleUpdate} />
+                        return <ListData key={post.id} data={post} remove={this.handleRemove} update={this.handleUpdate} detail={this.handleDetail} />
                     })
                 }
             </div>

@@ -8,7 +8,8 @@ class ListData extends Component{
                     {this.props.data.nama}, {this.props.data.alamat},
                     <button onClick={() => this.props.remove(this.props.data.id)}>Remove</button>
                     <button onClick={() => this.props.update(this.props.data)}>Update</button>
-                    <a href={`/detail/${this.props.data.id}`}>Detail</a>
+                    <button onClick={() => this.props.detail(this.props.data.id)}>Detail Function</button>
+                    <a href={`/detail/${this.props.data.id}`}>Detail Link</a>
                 </p>
             </div>
         )
